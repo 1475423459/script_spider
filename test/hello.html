@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>外联嵌入css样式</title>
+<link rel="stylesheet" type="text/css" href="hello.css">
+<meta charset="utf-8">
+</head>
+<body>
+<h1>我的提示框</h1>
+<p id ="demo">我的第一个段落</p>
+<p id ="full"></p>
+<script>
+    window.alert("请注意");
+   var person={
+       firstName:"wang",
+       lastName:"juan",
+       id:1,
+       fullName :function()
+       {
+          return  person.firstName + "" + person.lastName;
+       }
+   };
+    document.getElementById("full").innerHTML=person.fullName();
+    document.getElementById("full").innerHTML=person.fullName;
+
+</script>
+
+</body>
+</html>

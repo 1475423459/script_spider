@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>three</title>
+<script>
+    function lighton(){
+        document.getElementById('myimage').src="bulbon.jpg";
+    }
+    function  ligthoff(){
+        document.getElementById('myimage').src="bulboff.gif";
+    }
+</script>
+</head>
+<body>
+<image id="myimage" onmousedown="lighton()" onmouseup="lightoff()" src="bulboff.gif" \>
+<p>请点击以上图片</p>
+</body>
+</html>
